@@ -6,11 +6,11 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import "./Home.css";
 
 const Home = () => {
-  const [posts, setposts] = useState([]);
+  const [posts, setPosts] = useState([]);
   useEffect(() => {
     const fetchPosts = async () => {
       const res = await axios.get("/posts");
-      setposts(res.data);
+      setPosts(res.data);
     };
     fetchPosts();
   }, []);
