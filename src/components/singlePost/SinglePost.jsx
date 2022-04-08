@@ -20,7 +20,7 @@ const SinglePost = () => {
         try{
 
             await axios.put(`/posts/${post._id}`, {username:user.username, title,  desc });
-            window.location.reload();
+            setUpdateMode(false)
         }catch(err){ }     
         
     }
@@ -56,7 +56,7 @@ const SinglePost = () => {
                     autoFocus
                     onChange={(e)=> setTitle(e.target.value)}
                     />) : (
-                        <h1 className="singlePostTitle">{post.title}
+                        <h1 className="singlePostTitle">{title}
              {post.username === user?.username &&(
              <div className="singlePostEdit">
              <i className="singlePostIcon far fa-edit" onClick={()=>setUpdateMode(true)}></i>
@@ -75,9 +75,13 @@ const SinglePost = () => {
               </div>
               {
                 updateMode ? ( <textarea className="singlePostDescInput" value={desc} onChange={(e)=> setDesc(e.target.value)} /> ) : (
-                    <p className="singlePostDesc">{post.desc}</p>
+                    <p className="singlePostDesc">{desc}</p>
                 ) }
-             <button className="singlePostButton" onClick={handleUpdate}>Update!</button>
+                {updateMode &&(
+
+                <button className="singlePostButton" onClick={handleUpdate}>Update!</button>
+                )}
+            
             </div>
         </div>
     );
