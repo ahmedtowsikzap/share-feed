@@ -49,8 +49,6 @@ const Topbar = () => {
                             <li className="topListItem">
                             <Link to="/Register" className="link">REGISTER</Link>
                             </li>
-                           >
-                           
                         </ul>
                     )
                 }

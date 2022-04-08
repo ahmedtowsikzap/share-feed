@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <div className="header">
             <div className="headerTitles">
-            <span className="headerTitlesm"> <span className="big">S</span>hare Feed</span>
+            <span className="headerTitlesm"> <span className="big">Share</span> Feed</span>
             <span className="headerTitleLg">stories</span>
 
             </div>

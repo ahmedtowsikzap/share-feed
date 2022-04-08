@@ -20,7 +20,7 @@
     position: absolute;
     top: 21%;
     font-size: 100px;
-    color: rgba(55, 124, 115, 0.876);
+    color: rgba(255, 255, 255);
 }
 .headerImg{
     width: 100%;
@@ -30,6 +30,6 @@
 }
 .big{
 
-    color: rgb(244, 176, 88);
-    font-family: cursive;
+    color: rgb(246, 115, 8);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
