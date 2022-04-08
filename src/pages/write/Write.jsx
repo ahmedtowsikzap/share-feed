@@ -37,7 +37,7 @@ const Write = () => {
 
         }
         
-    }
+    };
     return (
         <div className="write">
 
