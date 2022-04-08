@@ -63,7 +63,32 @@
     margin: 10px;
     font-family: 'Lora', serif;
     font-size: 28px;
+    border: none;
+    color: gray;
+    border-bottom: 1px solid rgb(56, 230, 37);
 }
-..singlePostTitleInput:focus{
+.singlePostTitleInput:focus{
     outline: none;
+}
+
+.singlePostDescInput{
+    border: none;
+    color: #666;
+    font-size: 18px;
+    line-height: 25px;
+}
+.singlePostDescInput:focus{
+
+    outline: none;
+}
+.singlePostButton{
+    border: none;
+    background-color: rgb(239, 123, 55);
+    padding: 5px;
+    width: 100px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
 }

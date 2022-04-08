@@ -16,23 +16,30 @@ const SinglePost = () => {
     const [desc, setDesc] = useState("")
     const [updateMode, setUpdateMode] = useState(false)
 
+    const handleUpdate = async(e)=>{
+        try{
+
+            await axios.put(`/posts/${post._id}`, {username:user.username, title,  desc });
+            window.location.reload();
+        }catch(err){ }     
+        
+    }
+
     const handleDelete = async(e)=>{
         try{
 
             await axios.delete(`/posts/${post._id}`, {data :{username:user.username}});
             window.location.replace("/");
-        }catch(err){
-
-        }
-
-            
-    }
+        }catch(err){ }      
+    };
 
     useEffect(()=>{
           const getPost = async()=>{
 
             const res = await axios.get("/posts/"+path);
             setPost(res.data)
+            setTitle(res.data.title)
+            setDesc(res.data.desc)
           }
           getPost();
      
@@ -44,7 +51,11 @@ const SinglePost = () => {
              <img src={PF + post.photo} alt="" className="singlePostImg" />
 
                 )}
-                    {updateMode  ? (<input type="text" value={post.title} className="singlePostTitleInput" />) : (
+                    {updateMode  ? (<input type="text" value={title} className="singlePostTitleInput" 
+                    
+                    autoFocus
+                    onChange={(e)=> setTitle(e.target.value)}
+                    />) : (
                         <h1 className="singlePostTitle">{post.title}
              {post.username === user?.username &&(
              <div className="singlePostEdit">
@@ -63,10 +74,10 @@ const SinglePost = () => {
                   <span className="singlePostAuthor">{new Date(post.createdAt).toDateString()}</span>
               </div>
               {
-                updateMode ? ( <textarea className="singlePostDescInput" /> ) : (
+                updateMode ? ( <textarea className="singlePostDescInput" value={desc} onChange={(e)=> setDesc(e.target.value)} /> ) : (
                     <p className="singlePostDesc">{post.desc}</p>
                 ) }
-             
+             <button className="singlePostButton" onClick={handleUpdate}>Update!</button>
             </div>
         </div>
     );
