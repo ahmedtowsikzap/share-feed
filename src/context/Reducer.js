@@ -1,7 +1,7 @@
 const Reducer = (state, action)=>{
-    switch(action.type){
+    switch(action.type) {
         case "LOGIN_START":
-            return{
+            return {
                 user:null,
                 isFetching:true,
                 error:false,
@@ -19,7 +19,7 @@ const Reducer = (state, action)=>{
                         error:true,
                     };
                     default:
-                        return state
+                        return state;
     }
 };
 
