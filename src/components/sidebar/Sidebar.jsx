@@ -16,14 +16,13 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT ME</span>
+        <span className="sidebarTitle">ABOUT US !</span>
         <img
           src="https://i.pinimg.com/236x/1e/3f/58/1e3f587572a7a7b20bbf1828595a1786--holiday-party-themes-holiday-gift-guide.jpg"
-          alt=""
+          alt="aot.jpg"
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
-          necessitatibus nostrum illum reprehenderit.
+          Share Feed Where Travelers can share their Blogs & Enjoy the rousing, gripping, thrilling experiance by travelers around the world!.
         </p>
       </div>
       <div className="sidebarItem">

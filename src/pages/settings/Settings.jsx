@@ -68,26 +68,26 @@ export default function Settings() {
           <label>Username</label>
           <input
             type="text"
-            placeholder={user.username}
+            placeholder="Your old username or Add new username "
             onChange={(e) => setUsername(e.target.value)}
           />
           <label>Email</label>
           <input
             type="email"
-            placeholder={user.email}
+            placeholder="Type your email...."
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label>Password</label>
+          <label>Create New Password</label>
           <input
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
           <button className="settingsSubmit" type="submit">
-            Update
+            Update!
           </button>
           {success && (
             <span
-              style={{ color: "green", textAlign: "center", marginTop: "20px" }}
+              className="sp"
             >
               Profile has been updated...
             </span>
