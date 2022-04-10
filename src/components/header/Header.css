@@ -1,5 +1,6 @@
 .header {
     margin-top: 60px;
+    
 }
   
 .headerTitles {
@@ -7,6 +8,7 @@
     flex-direction: column;
     align-items: center;
     font-family: "Lora", serif;
+    font-size: 18px;
 }
   
 .headerTitleSm {
