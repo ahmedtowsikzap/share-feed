@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../../components/header/Header";
+import Hero from "../../components/hero/Hero";
 import Posts from "../../components/posts/Posts";
 import Sidebar from "../../components/sidebar/Sidebar";
 import "./Home.css";
@@ -19,6 +20,7 @@ const Home = () => {
   }, [search]);
   return (
     <>
+      <Hero/>
       <Header />
       <div className="home">
         <Posts posts={posts} />

@@ -21,7 +21,7 @@
     position: absolute;
     top: 20%;
     font-size: 100px;
-    background: -webkit-radial-gradient(circle, rgba(63, 94, 251, 0.861) 0%, rgba(252, 70, 106, 0.801) 100%);
+    background: -webkit-radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 106) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
