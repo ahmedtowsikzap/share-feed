@@ -22,11 +22,11 @@ const Topbar = () => {
 
                 <ul className="topList">
                <li className="topListItem">
-                   <Link to="/" className="link">HOME</Link>
+                   <Link to="/" className="link li">HOME</Link>
                </li>
-               <li className="topListItem"><Link to="/" className="link">ABOUT</Link></li>
-               <li className="topListItem"><Link to="/" className="link">CONTACT</Link></li>
-               <li className="topListItem"><Link to="/Write" className="link">WRITE</Link></li>
+               <li className="topListItem"><Link to="/" className="link li">ABOUT</Link></li>
+               <li className="topListItem"><Link to="/" className="link li">CONTACT</Link></li>
+               <li className="topListItem"><Link to="/Write" className="link li">WRITE</Link></li>
                <li className="topListItem" onClick={handleLogout}>
                    {user && "LOGOUT"}
                </li>
@@ -45,10 +45,10 @@ const Topbar = () => {
                     ) : (
                         <ul className="topList">
                             <li className="topListItem">
-                            <Link to="/Login" className="link">LOGIN</Link>
+                            <Link to="/Login" className="link li">LOGIN</Link>
                             </li>
                             <li className="topListItem">
-                            <Link to="/Register" className="link">REGISTER</Link>
+                            <Link to="/Register" className="link li">REGISTER</Link>
                             </li>
                         </ul>
                     )

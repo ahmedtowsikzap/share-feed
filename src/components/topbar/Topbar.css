@@ -24,7 +24,7 @@ align-items: center;
 .topIcon{
     font-size: 25px;
     margin-right: 10px;
-    color: rgb(201, 118, 118);
+    color: rgb(229, 66, 185);
     cursor: pointer;
 }
 
@@ -56,4 +56,28 @@ align-items: center;
     color :rgb(255, 113, 47);
     cursor: pointer;
     margin-left: 15px;
+}
+/* .li{
+    border-radius: 2px;
+    padding: 1px;
+}
+.li:hover{
+
+    background-color: blueviolet;
+    color: white;
+} */
+.li{
+ border-radius: 5px;
+ box-shadow: rgba(223, 33, 230, 0.089) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+ padding: 3px;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ transform: translate(-50%, -50%);
+ cursor: pointer;
+ transition: border-color 0.9s, background-color 0.7s, color 0.7s;
+}
+.li:hover{
+    
+    background-color: rgb(251, 138, 52);
+    border-color: transparent;
+    color: rgb(255, 255, 255);
 }
