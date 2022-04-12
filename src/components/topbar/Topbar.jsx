@@ -27,7 +27,7 @@ const Topbar = () => {
                <li className="topListItem"><Link to="/" className="link li">ABOUT</Link></li>
                <li className="topListItem"><Link to="/" className="link li">CONTACT</Link></li>
                <li className="topListItem"><Link to="/Write" className="link li">WRITE</Link></li>
-               <li className="topListItem li" onClick={handleLogout}>
+               <li className="topListItem li2" onClick={handleLogout}>
                    {user && "LOGOUT"}
                </li>
 
