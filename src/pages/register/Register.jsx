@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { axiosInstance } from "../../config";
 import "./Register.css"
 
 const Register = () => {
@@ -14,7 +15,7 @@ const Register = () => {
         setError(false)
     try{
         
-        const res = await axios.post("/auth/register", {
+        const res = await axiosInstance.post("/auth/register", {
             username,email,password
          });
          res.data && window.location.replace("/login");

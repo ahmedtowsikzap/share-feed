@@ -5,6 +5,7 @@ import Header from "../../components/header/Header";
 import Hero from "../../components/hero/Hero";
 import Posts from "../../components/posts/Posts";
 import Sidebar from "../../components/sidebar/Sidebar";
+import { axiosInstance } from "../../config";
 import "./Home.css";
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
  
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("/posts"+search);
+      const res = await axiosInstance.get("/posts"+ search);
       setPosts(res.data);
     };
     fetchPosts();
