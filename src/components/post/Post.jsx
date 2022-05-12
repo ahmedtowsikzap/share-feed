@@ -3,7 +3,7 @@ import "./Post.css"
 
 const Post = ({post}) => {
 
-    const PF = "http://localhost:5000/images/";
+    const PF = "https://share-feed-12.herokuapp.com/images/";
     return (
         <div className="post">
             {post.photo && (
