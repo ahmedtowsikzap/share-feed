@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../../components/header/Header";
-import Hero from "../../components/hero/Hero";
+import TopHero from "../../components/hero/TopHero";
 import Posts from "../../components/posts/Posts";
 import Sidebar from "../../components/sidebar/Sidebar";
 import { axiosInstance } from "../../config";
@@ -21,7 +21,7 @@ const Home = () => {
   }, [search]);
   return (
     <>
-      <Hero/>
+      <TopHero/>
       <Header />
       <div className="home">
         <Posts posts={posts} />
