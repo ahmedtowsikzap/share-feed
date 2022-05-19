@@ -13,7 +13,7 @@ const Header = () => {
       </div>
       <img
         className="headerImg"
-        src="https://images.unsplash.com/photo-1532105111962-e23707867985?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        src="https://images.pexels.com/photos/1248418/pexels-photo-1248418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt=""
       />
     </div>
