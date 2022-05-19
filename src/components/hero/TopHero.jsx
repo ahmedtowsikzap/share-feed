@@ -8,8 +8,8 @@ const TopHero = () => {
          <div className="content-left">
              <h1>Share & Feed</h1>
              <h2>Blog</h2>
-             <i className="now1 fa-solid fa-comments"></i>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi blanditiis porro minima eum accusantium. Suscipit deleniti officiis atque quos. Consequatur. </p>
+             <i className="damn fa-solid fa-umbrella-beach"></i>
+             <p className="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi blanditiis porro minima eum accusantium. Suscipit deleniti officiis atque quos. Consequatur. </p>
              <button className="cta">
              <Link className="link" to="/register">
              Write
