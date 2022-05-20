@@ -5,7 +5,6 @@ const Header = () => {
         <div className="header">
       <div className="headerTitles">
         <span className="headerTitleSm">
-        <i className="now fa-solid fa-umbrella-beach"></i>
             Share & Feed
         <i className="now1 fa-solid fa-comments"></i>
         </span>
